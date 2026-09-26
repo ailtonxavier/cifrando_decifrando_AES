@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: script_criptografia
+    volumes:
+      - ./original:/app/original
+      - ./cifrado:/app/cifrado
+      - ./decifrado:/app/decifrado
+    env_file:
+      - .env
+    restart: "no"
