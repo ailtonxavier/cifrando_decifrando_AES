@@ -1,5 +1,12 @@
+# Ignora arquivos gerados dentro das pastas, mas mantém a estrutura
 /original/*
-/cifrado/*
-/decifrado/*
+!/original/.gitkeep
 
+/cifrado/*
+!/cifrado/.gitkeep
+
+/decifrado/*
+!/decifrado/.gitkeep
+
+# Ignora o arquivo de ambiente
 .env
